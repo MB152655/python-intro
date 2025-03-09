@@ -1,0 +1,11 @@
+1. Funkcja wbudowana - len()
+Funkcja len() zwraca liczbę elementów w sekwencji (np. liście, krotce, stringu).
+https://docs.python.org/3/library/functions.html#len
+
+2. Moduł z biblioteki standardowej - random
+Moduł random pozwala na generowanie liczb losowych oraz losowy wybór elementów z sekwencji.
+https://docs.python.org/3/library/random.html
+
+3. Wyjątek - ValueError
+Wyjątek ValueError występuje, gdy funkcja otrzyma argument o poprawnym typie, ale niepoprawnej wartości.
+https://docs.python.org/3/library/exceptions.html#ValueError
