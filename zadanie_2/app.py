@@ -1,32 +1,30 @@
+# 1. Walidacja e-mail
 import re
-
-#sprawdzenie poprawosci adresu e-mail
-def is_email_valid(email):
+def validate_email(email):
     pattern = r'^[\w\.-]+@[\w\.-]+\.\w+$'
-    return re.match(pattern, email) is not None
+    return bool(re.match(pattern, email))
 
-
-#obliczanie pola koła
-class TestCircleArea(unittest.TestCase):
-    def test_valid_radius(self):
-        self.assertAlmostEqual(app.calculate_circle_area(3), 28.2743, places=4)
-
-    def test_negative_radius(self):
-        with self.assertRaises(ValueError):
-            app.calculate_circle_area(-1)
-
-    def test_non_numeric_input(self):
-        with self.assertRaises(TypeError):
-            app.calculate_circle_area("abc")
-
-
-
-#
+# 2. Obliczanie pola koła
 import math
-
-def calculate_circle_area(radius):
-    if not isinstance(radius, (int, float)):
-        raise TypeError("Radius must be a number")
+def circle_area(radius):
     if radius < 0:
-        raise ValueError("Radius cannot be negative")
+        raise ValueError("Promień nie może być ujemny")
     return math.pi * radius ** 2
+
+# 3. Filtrowanie listy
+def filter_even(numbers):
+    return [num for num in numbers if num % 2 == 0]
+
+# 4. Konwersja daty
+from datetime import datetime
+def convert_date(date_str):
+    try:
+        date = datetime.strptime(date_str, "%d/%m/%Y")
+        return date.strftime("%Y-%m-%d")
+    except ValueError:
+        raise ValueError("Nieprawidłowy format daty")
+
+# 5. Sprawdzanie palindromu
+def is_palindrome(text):
+    cleaned = ''.join(filter(str.isalnum, text.lower()))
+    return cleaned == cleaned[::-1]
