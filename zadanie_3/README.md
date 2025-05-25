@@ -12,7 +12,7 @@
 
 ### Ręczna instalacja (zalecana podczas rozwoju)
 
-git clone https://github.com/twoj-uzytkownik/my_awesome_lib.git
+git clone https://github.com/MB152655/my_awesome_lib.git
 cd my_awesome_lib
 pip install -e .
 
