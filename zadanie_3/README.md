@@ -16,8 +16,6 @@ git clone https://github.com/MB152655/my_awesome_lib.git
 cd my_awesome_lib
 pip install -e .
 
-text
-
 ### Bezpośrednie użycie w projekcie
 
 Możesz również po prostu skopiować folder `my_awesome_lib` do swojego projektu i zaimportować moduły.
@@ -39,15 +37,13 @@ Przetwarzanie tekstu
 print(count_words("Ala ma kota")) # Wynik: 3
 print(reverse_text("Python")) # Wynik: nohtyP
 
-text
-
 ## Licencja
 
 MIT License
 
 ## Autor
 
-Jan Kowalski
+MB
 
 ## Wersja
 
